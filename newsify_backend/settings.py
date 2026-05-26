@@ -126,3 +126,8 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 # Ensure Django redirects to our app's login page instead of the default /accounts/login/
 LOGIN_URL = "/login/"
 LOGIN_REDIRECT_URL = "/"
+import os
+
+STATIC_URL = 'static/'
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
